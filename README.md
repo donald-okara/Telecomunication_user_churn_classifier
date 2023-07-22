@@ -10,7 +10,7 @@ The initial section of the code focuses on data mining and data loading. It impo
 
 In this section, data cleaning operations are performed. The code separates the numerical and categorical columns using a custom function from the 'preprolib' library. Certain columns are also added to an 'ignore_list', and the function 'cat_or_num' helps identify which columns are categorical and which are numerical. The code then proceeds to plot count plots for each categorical variable with respect to the 'Customer Status' to analyze churn behavior. It also displays histograms and a heatmap to analyze the correlation between numerical variables.
 
-##2.1 EDA
+## 2.1 EDA
 Here we explore the features and how they affect each other and the target variable. They are separated into Numerical, ordinal and nominal variables.
 
 ## 2.2 Data Preprocessing
