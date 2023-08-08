@@ -15,6 +15,9 @@ Here I explore the features and how they affect each other and the target variab
 #### 2.1.1 Numeric Data
 Here I explore the numeric features and how they affect each other and the target variable.
 
+### 2.1.2 Categorical Data
+Here I explore the categorical features and how they affect each other and the target variable.
+
 
 ## 2.2 Data Preprocessing
 

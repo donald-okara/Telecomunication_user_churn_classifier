@@ -152,3 +152,16 @@ Further investigation is required
 
 Users who pay via mail are less common and are more likely to churn. This column is to be coded ordinally based on percentage of churn per category.
 
+##### Before pruning categorical data
+Model Evaluation: 
+Accuracy: 0.8248816768086545 
+Precision: 0.8181715735438497 
+Recall: 0.8248816768086545 
+F1-score: 0.8174064250075703
+
+##### After
+Model Evaluation: 
+Accuracy: 0.8323191345503719 
+Precision: 0.8273756347717985 
+Recall: 0.8323191345503719 
+F1-score: 0.8263798630584416
