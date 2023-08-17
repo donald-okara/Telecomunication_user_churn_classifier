@@ -165,3 +165,5 @@ Accuracy: 0.8323191345503719
 Precision: 0.8273756347717985 
 Recall: 0.8323191345503719 
 F1-score: 0.8263798630584416
+
+Possibly do a survival analysis
