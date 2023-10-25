@@ -160,7 +160,7 @@ pip install dash plotly pandas scikit-learn jupyter
 To run the dashboard, execute the script in your Python environment:
 
 ```bash
-python [your_script_name].py
+python Dashboard.py
 ```
 
 The dashboard will run locally, and you can access it via your web browser.
