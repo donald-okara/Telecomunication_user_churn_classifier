@@ -142,7 +142,10 @@ confusion_matrix_plot = dcc.Graph(id='confusion-matrix-plot')
 
 # Define the layout of the app
 app.layout = html.Div([
-    html.H1(id='H1', children='Telecommunication User Churn Dashboard', style={'textAlign': 'center',
+    html.H1(id='H1', children='Telecommunication User Churn Dashboard', style={'textAlign': 'left',
+                                                                               'marginTop': 40, 'marginBottom': 40}),
+                                                                               
+    html.H2(id='H2', children='Distribution of Variables.', style={'textAlign': 'left',
                                                                                'marginTop': 40, 'marginBottom': 40}),
     
     # 1. Distribution of the Target Variable (Customer Status)
@@ -152,9 +155,10 @@ app.layout = html.Div([
     html.Div(id='histogram-subplots'),
     
     # 3. Comparison Plots of Features Versus the Target Variable
-    html.H1(id='H3', children='Comparison Plots of Features', style={'textAlign': 'left',
+    html.H2(id='H3', children='Comparison Pie Charts of Categorical Features', style={'textAlign': 'left',
                                                                       'marginTop': 20, 'marginBottom': 20}),
     
+
     # Dropdowns for feature selection and status selection
     html.Label('Feature:'),
     dcc.Dropdown(
@@ -180,16 +184,21 @@ app.layout = html.Div([
     # Categorical feature comparison (Pie charts)
     html.Div(id='pie-charts-container', style={'display': 'flex', 'flex-wrap': 'wrap'}),
 
+    html.H2(id='H4', children='Comparison Box Plots of Numerical Features', style={'textAlign': 'left',
+                                                                      'marginTop': 20, 'marginBottom': 20}),
+    
     # Numeric feature comparison (Box plots)
     html.Div(id='box-plots-container', style={'display': 'flex', 'flex-wrap': 'wrap'}),
     
-    html.P(id='P1', children='This is the confusion matrix for the model.', style={'textAlign': 'left',
+    html.H2(id='H5', children='This is the confusion matrix for the model.', style={'textAlign': 'left',
                                                                       'marginTop': 20, 'marginBottom': 20}),
 
     confusion_matrix_plot,
 # Inside the app.layout definition
     dcc.Graph(id='feature-importance-plot'),
 
+    html.H2(id='H6', children='These are the Cross Validation scores of the model.', style={'textAlign': 'left',
+                                                                      'marginTop': 20, 'marginBottom': 20}),
     dcc.Markdown(
         id='P2',
         children='''Cross-validation Scores: 0.82344428  
@@ -200,6 +209,8 @@ app.layout = html.Div([
         style={'textAlign': 'left', 'marginTop': 20, 'marginBottom': 20}
     ),
 
+    html.H2(id='H7', children='These are the Evaluation scores of the model.', style={'textAlign': 'left',
+                                                                      'marginTop': 20, 'marginBottom': 20}),
     dcc.Markdown(
         id='P3',
         children='''Model Evaluation: Accuracy: 0.8248816768086545  
